@@ -264,6 +264,25 @@ st.title("Rain Prediction App")
 st.write(
     "Charge un fichier CSV BoM, choisis une localisation et une date, puis prédis la pluie du lendemain."
 )
+st.info("""
+📥 **Comment récupérer les données météo ?**
+
+Les données proviennent du site officiel du Bureau of Meteorology :
+
+👉 https://www.bom.gov.au/climate/dwo/index.shtml
+
+**Étapes :**
+
+1. Clique sur une ville australienne (ex : Sydney, Perth…)
+2. Sélectionne un mois dans la liste (ex : Apr 26, Mar 26…)
+3. Une fois sur la page du mois :
+   - utilise **"Other formats"**
+   - télécharge le fichier en **CSV (plain text version)**
+
+4. Importe ce fichier dans l'application
+
+⚠️ Les données sont organisées par **ville et par mois**.
+""")
 
 try:
     model, metadata, imputer_values = load_artifacts()
