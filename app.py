@@ -281,7 +281,6 @@ Les données proviennent du site officiel du Bureau of Meteorology :
 
 4. Importe ce fichier dans l'application
 
-⚠️ Les données sont organisées par **ville et par mois**.
 """)
 
 try:
